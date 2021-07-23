@@ -1,0 +1,23 @@
+{
+  "name": "amazon_clone",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-Bahadur/Amazon_clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sam-Bahadur/Amazon_clone/issues"
+  },
+  "homepage": "https://github.com/Sam-Bahadur/Amazon_clone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
