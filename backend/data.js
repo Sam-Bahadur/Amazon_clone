@@ -1,4 +1,20 @@
+import bcrypt from "bcryptjs";
+
 const data = {
+  users: [
+    {
+      name: "Pradeep",
+      email: "admin@example.com",
+      password: bcrypt.hashSync("123", 8),
+      isAdmin: true,
+    },
+    {
+      name: "Timsina",
+      email: "nonadmin@example.com",
+      password: bcrypt.hashSync("123", 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
       _id: "1",
@@ -7,7 +23,6 @@ const data = {
       image: "/images/p1.jpg",
       price: 120,
       countInStock: 10,
-      brand: "Nike",
       brand: "Nike",
       rating: "4.5",
       numReviews: 10,
@@ -21,7 +36,6 @@ const data = {
       price: 100,
       countInStock: 20,
       brand: "Umbro",
-      brand: "Nike",
       rating: "4",
       numReviews: 11,
       description: "high quality product",
@@ -33,7 +47,6 @@ const data = {
       image: "/images/p3.jpg",
       price: 120,
       countInStock: 0,
-      brand: 120,
       brand: "Nike",
       rating: "4.5",
       numReviews: 10,
@@ -46,7 +59,6 @@ const data = {
       image: "/images/p4.jpg",
       price: 120,
       countInStock: 15,
-      brand: 120,
       brand: "Nike",
       rating: "4.5",
       numReviews: 10,
@@ -59,7 +71,6 @@ const data = {
       image: "/images/p5.jpg",
       price: 20,
       countInStock: 5,
-      brand: 20,
       brand: "Chinese",
       rating: "4.5",
       numReviews: 10,
